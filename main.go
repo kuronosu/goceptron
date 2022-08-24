@@ -95,9 +95,9 @@ func PlotCircularPrediction(p goceptron.Perceptron) {
 	// pts := append(pts0, pts1...)
 
 	plt := plot.New()
-	plt.Title.Text = "Iris Data Set"
-	plt.X.Label.Text = "Petal length"
-	plt.Y.Label.Text = "Petal width"
+	plt.Title.Text = "Circular predictions"
+	plt.X.Label.Text = "x"
+	plt.Y.Label.Text = "y"
 	err := plotutil.AddScatters(plt,
 		"0", pts0,
 		"1", pts1,
@@ -190,7 +190,7 @@ func PlotPoints(X [][]float64, Y []float64, title, labelX, labelY, labelT0, labe
 
 func PlotIrisPredictions(p goceptron.Perceptron) {
 	plt := plot.New()
-	plt.Title.Text = "Iris Data Set"
+	plt.Title.Text = "Iris Prediction"
 	plt.X.Label.Text = "Petal length"
 	plt.Y.Label.Text = "Petal width"
 	points := BinaryLabelPoints(50, 50, 0, 6, 0, 2, p, func(x []float64) []float64 { return x })
