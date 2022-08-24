@@ -67,7 +67,7 @@ func (p *Perceptron) transfer(input []float64) (float64, error) {
 
 func (p *Perceptron) randomizeWeights() {
 	for i := range p.weights {
-		p.weights[i] = randFloat(-1.0, 1.0)
+		p.weights[i] = FandFloat(-1.0, 1.0)
 	}
 }
 
