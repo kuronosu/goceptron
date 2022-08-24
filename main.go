@@ -105,7 +105,7 @@ func PlotCircularPrediction(p goceptron.Perceptron) {
 	if err != nil {
 		panic(err)
 	}
-	if err := plt.Save(10*vg.Inch, 10*vg.Inch, "curcular_predictions.png"); err != nil {
+	if err := plt.Save(10*vg.Inch, 10*vg.Inch, "circular_predictions.png"); err != nil {
 		panic(err)
 	}
 
